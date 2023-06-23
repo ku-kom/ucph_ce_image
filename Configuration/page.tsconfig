@@ -3,7 +3,26 @@ mod.wizards.newContentElement.wizardItems {
   common {
     elements {
       ucph_ce_image {
-        iconIdentifier = content-text
+        iconIdentifier = content-image
+        title = LLL:EXT:ucph_ce_image/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_title
+        description = LLL:EXT:ucph_ce_image/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_desc
+        tt_content_defValues {
+          CType = ucph_ce_image
+        }
+      }
+    }
+    show := addToList(ucph_ce_image)
+  }
+}
+
+
+mod.wizards.newContentElement.wizardItems {
+  // add the content element to the tab "Image"
+  image {
+    header = LLL:EXT:ucph_ce_image/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_wizard_tab
+    elements {
+      ucph_ce_image {
+        iconIdentifier = content-image
         title = LLL:EXT:ucph_ce_image/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_title
         description = LLL:EXT:ucph_ce_image/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_desc
         tt_content_defValues {

@@ -6,6 +6,9 @@
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
+        <trans-unit id="ucph_ce_image_wizard_tab">
+            <source>Media</source>
+        </trans-unit>
         <trans-unit id="ucph_ce_image_title">
             <source>Images only</source>
         </trans-unit>

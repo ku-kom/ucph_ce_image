@@ -18,9 +18,9 @@ call_user_func(function ($extKey ='ucph_ce_image', $contentType ='ucph_ce_image'
             'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_title',
             $contentType,
             // icon identifier
-            'content-text',
+            'content-image',
         ],
-        'textmedia',
+        'image',
         'after'
     );
 
