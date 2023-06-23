@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+
+    <div class="ctype_{data.CType}">
+        <f:if condition="{images}">
+            <f:then>
+                <f:for each="{images}" as="image">
+                    <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" title="{image.title}" />
+                </f:for>
+            </f:then>
+        </f:if>
+</f:section>
+
+</html>
