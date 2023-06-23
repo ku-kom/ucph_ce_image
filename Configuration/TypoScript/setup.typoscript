@@ -1,6 +1,3 @@
-#############################################
-#### UCPH CONTENT ELEMENT "rEGULAR TEXT" ####
-#############################################
 tt_content.ucph_ce_image =< lib.contentElement
 tt_content.ucph_ce_image {
 	templateName = Image
