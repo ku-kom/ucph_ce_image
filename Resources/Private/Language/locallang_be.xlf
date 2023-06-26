@@ -18,6 +18,9 @@
         <trans-unit id="ucph_ce_image_internal_title">
             <source>Internal title - not displayed in the frontend</source>
         </trans-unit>
+         <trans-unit id="ucph_ce_image_alt">
+            <source>Optional: Usually empty for decorative images</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
