@@ -4,9 +4,15 @@ tt_content.ucph_ce_image >
 tt_content.ucph_ce_image =< lib.contentElement
 tt_content.ucph_ce_image {
 	templateName = Image
-	templateRootPaths.100 = EXT:ucph_ce_image/Resources/Private/Templates/
-    partialRootPaths.100 = EXT:ucph_ce_image/Resources/Private/Partials/
-    layoutRootPaths.100 = EXT:ucph_ce_image/Resources/Private//Layouts/
+    templateRootPaths {
+        20 = EXT:ucph_ce_image/Resources/Private/Templates/
+    }
+    partialRootPaths {
+        20 = EXT:ucph_ce_image/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+        20 = EXT:ucph_base_config/Resources/Private/Layouts/
+    }
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
