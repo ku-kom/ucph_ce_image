@@ -19,7 +19,7 @@
             <source>Internal title - not displayed in the frontend</source>
         </trans-unit>
          <trans-unit id="ucph_ce_image_alt">
-            <source>Optional: Usually empty for decorative images</source>
+            <source>Optional: Keep empty for decorative images</source>
         </trans-unit>
         </body>
     </file>
