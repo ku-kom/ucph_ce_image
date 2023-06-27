@@ -1,3 +1,6 @@
+tt_content.ucph_ce_image >
+# CTYPE: Image
+
 tt_content.ucph_ce_image =< lib.contentElement
 tt_content.ucph_ce_image {
 	templateName = Image
