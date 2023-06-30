@@ -11,6 +11,7 @@ defined('TYPO3') or die('Access denied.');
 
 // Extension key
 $ext = 'ucph_ce_image';
+$ctype = 'ucph_ce_image';
 
 // Add crop variants
 $defaultCropSettings = [
@@ -53,9 +54,9 @@ $extrasmallCropSettings = $defaultCropSettings;
 $extrasmallCropSettings['title'] = 'LLL:EXT:'. $ext .'/Resources/Private/Language/locallang_be.xlf:option.extrasmall';
 
 // Image content element
-$GLOBALS['TCA']['tt_content']['types']['ucph_ce_image']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['default'] = $defaultCropSettings;
-$GLOBALS['TCA']['tt_content']['types']['ucph_ce_image']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['xlarge'] = $xlargeCropSettings;
-$GLOBALS['TCA']['tt_content']['types']['ucph_ce_image']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['large'] = $largeCropSettings;
-$GLOBALS['TCA']['tt_content']['types']['ucph_ce_image']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['medium'] = $mediumCropSettings;
-$GLOBALS['TCA']['tt_content']['types']['ucph_ce_image']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['small'] = $smallCropSettings;
-$GLOBALS['TCA']['tt_content']['types']['ucph_ce_image']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['extrasmall'] = $extrasmallCropSettings;
+$GLOBALS['TCA']['tt_content']['types'][$ctype]['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['default'] = $defaultCropSettings;
+$GLOBALS['TCA']['tt_content']['types'][$ctype]['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['xlarge'] = $xlargeCropSettings;
+$GLOBALS['TCA']['tt_content']['types'][$ctype]['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['large'] = $largeCropSettings;
+$GLOBALS['TCA']['tt_content']['types'][$ctype]['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['medium'] = $mediumCropSettings;
+$GLOBALS['TCA']['tt_content']['types'][$ctype]['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['small'] = $smallCropSettings;
+$GLOBALS['TCA']['tt_content']['types'][$ctype]['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['extrasmall'] = $extrasmallCropSettings;
