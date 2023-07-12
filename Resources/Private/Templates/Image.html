@@ -1,19 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
-    <div id="c{data.uid}" class="ctype_{data.CType}">
-        <f:if condition="{images}">
-            <f:then>
-                <f:for each="{images}" as="image">
-                    <figure class="image">
-                        <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" />
-                        <f:if condition="{image.description}">
-                            <figcaption>{image.description}</figcaption>
-                        </f:if>
-                    </figure>
-                </f:for>
-            </f:then>
-        </f:if>
+    <f:if condition="{images}">
+        <f:then>
+            <f:for each="{images}" as="image">
+                <figure class="image">
+                    <f:image src="{f:uri.image(image: image)}" alt="{image.alternative}" />
+                    <f:if condition="{image.description}">
+                        <figcaption>{image.description}</figcaption>
+                    </f:if>
+                </figure>
+            </f:for>
+        </f:then>
+    </f:if>
 </f:section>
 
 </html>
