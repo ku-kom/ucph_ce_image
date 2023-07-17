@@ -1,8 +1,4 @@
-<html
-  xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-  xmlns:i="http://typo3.org/ns/B13/Picture/ViewHelpers"
-  data-namespace-typo3-fluid="true"
->
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
     <f:if condition="{images}">
@@ -10,12 +6,12 @@
             <f:for each="{images}" as="image">
                 <figure class="image">
                     <picture>
-                        <source srcset="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: settings.maxImgWidth, cropVariant: 'xlarge')}" media="(min-width: 1200px)">
-                        <source srcset="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: '992', cropVariant: 'large')}, {f:uri.image(image: image, maxWidth: '1984', cropVariant: 'large')} 2x" media="(min-width: 992px)">
-                        <source srcset="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: '992', cropVariant: 'medium')}, {f:uri.image(image: image, maxWidth: '1536', cropVariant: 'medium')} 2x" media="(min-width: 768px)">
-                        <source srcset="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: '768', cropVariant: 'small')}, {f:uri.image(image: image, maxWidth: '1536', cropVariant: 'small')} 2x" media="(max-width: 767px)">
-                        <!---Fallback--->
-                        <img class="img-responsive" src="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: settings.maxImgWidth, cropVariant: 'default')}" alt="{image.alternative}" longdesc="{image.description}" title="{image.title}">
+                        <source srcset="{f:uri.image(image:image, width:'1400', cropVariant:'xlarge')}" media="(min-width:1400px)" />
+                        <source srcset="{f:uri.image(image:image, width:'1200', cropVariant:'large')}" media="(min-width:1200px)" />
+                        <source srcset="{f:uri.image(image:image, width:'992', cropVariant:'medium')}" media="(min-width:992px)" />
+                        <source srcset="{f:uri.image(image:image, width:'768', cropVariant:'small')}" media="(min-width:768px)" />
+                        <source srcset="{f:uri.image(image:image, width:'620', cropVariant:'xsmall')}" media="(min-width:0px)" />
+                        <img class="img-responsive" src="{f:uri.image(image: image, treatIdAsReference: true, maxWidth: settings.maxImgWidth, cropVariant: 'default')}" alt="{image.alternative}">
                     </picture>
                     <f:if condition="{image.description}">
                         <figcaption>{image.description}</figcaption>
@@ -27,5 +23,3 @@
 </f:section>
 
 </html>
-
-
