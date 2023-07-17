@@ -13,7 +13,7 @@
             <source>Images only</source>
         </trans-unit>
         <trans-unit id="ucph_ce_image_desc">
-            <source>Any number of images aligned in columns and rows with a caption.</source>
+            <source>Any number of images with optional caption.</source>
         </trans-unit>
         <trans-unit id="ucph_ce_image_internal_title">
             <source>Internal title - not displayed in the frontend</source>
