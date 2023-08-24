@@ -1,14 +1,14 @@
-tt_content.ucph_ce_image >
+tt_content.ucph_content_image >
 # CTYPE: Image
 
-tt_content.ucph_ce_image =< lib.contentElement
-tt_content.ucph_ce_image {
+tt_content.ucph_content_image =< lib.contentElement
+tt_content.ucph_content_image {
 	templateName = Image
     templateRootPaths {
-        20 = EXT:ucph_ce_image/Resources/Private/Templates/
+        20 = EXT:ucph_content_image/Resources/Private/Templates/
     }
     partialRootPaths {
-        20 = EXT:ucph_ce_image/Resources/Private/Partials/
+        20 = EXT:ucph_content_image/Resources/Private/Partials/
     }
     layoutRootPaths {
         20 = EXT:ucph_base_config/Resources/Private/Layouts/

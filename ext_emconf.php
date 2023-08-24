@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Extension Manager/Repository config file for ext "ucph_ce_image".
+ * Extension Manager/Repository config file for ext "ucph_content_image".
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'UCPH TYPO3 content element "Image"',
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'UniversityOfCopenhagen\\UcphCeImage\\' => 'Classes',
+            'UniversityOfCopenhagen\\UcphContentImage\\' => 'Classes',
         ],
     ],
     'state' => 'stable',

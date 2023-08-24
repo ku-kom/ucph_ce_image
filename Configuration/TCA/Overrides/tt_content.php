@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /*
- * This file is part of the package ucph_ce_image.
+ * This file is part of the package ucph_content_image.
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
  * June 2023 Nanna Ellegaard, University of Copenhagen.
@@ -9,13 +9,13 @@
 
 defined('TYPO3') or die();
 
-call_user_func(function ($extKey ='ucph_ce_image', $contentType ='ucph_ce_image') {
+call_user_func(function ($extKey ='ucph_content_image', $contentType ='ucph_content_image') {
     // Adds the content element to the "Type" dropdown
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
         'tt_content',
         'CType',
         [
-            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_title',
+            'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_image_title',
             $contentType,
             // icon identifier
             'content-image',
@@ -39,7 +39,7 @@ call_user_func(function ($extKey ='ucph_ce_image', $contentType ='ucph_ce_image'
             'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;;general,
-                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_internal_title,image,
+                header; LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_image_internal_title,image,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -79,7 +79,7 @@ call_user_func(function ($extKey ='ucph_ce_image', $contentType ='ucph_ce_image'
                                     ],
                                 ],
                                 'alternative' => [
-                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_ce_image_alt'
+                                    'description' => 'LLL:EXT:' . $extKey . '/Resources/Private/Language/locallang_be.xlf:ucph_content_image_alt'
                                 ]
                             ],
                             'types' => [

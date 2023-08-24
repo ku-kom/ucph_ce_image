@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="EXT:ucph_ce_image/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_ce_image">
+    <file source-language="en" datatype="plaintext" original="EXT:ucph_content_image/Resources/Private/Language/locallang_be.xlf" date="2023-06-21T10:27:00Z" product-name="ucph_content_image">
         <header>
             <authorName>Nanna Ellegaard</authorName>
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-        <trans-unit id="ucph_ce_image_wizard_tab">
+        <trans-unit id="ucph_content_image_wizard_tab">
             <source>Media</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_image_title">
+        <trans-unit id="ucph_content_image_title">
             <source>Images only</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_image_desc">
+        <trans-unit id="ucph_content_image_desc">
             <source>Any number of images with optional caption.</source>
         </trans-unit>
-        <trans-unit id="ucph_ce_image_internal_title">
+        <trans-unit id="ucph_content_image_internal_title">
             <source>Internal title - not displayed in the frontend</source>
         </trans-unit>
-         <trans-unit id="ucph_ce_image_alt">
+         <trans-unit id="ucph_content_image_alt">
             <source>Optional: Keep empty for decorative images</source>
         </trans-unit>
         </body>
