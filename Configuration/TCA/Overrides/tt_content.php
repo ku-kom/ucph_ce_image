@@ -59,6 +59,7 @@ call_user_func(function ($extKey ='ucph_content_image', $contentType ='ucph_cont
                 'image' => [
                     'config' => [
                         'minitems' => 1,
+                        'maxitems' => 10,
                         'appearance' => [
                             'elementBrowserType' => 'file',
                             'elementBrowserAllowed' => 'jpg,jpeg,png,svg'
